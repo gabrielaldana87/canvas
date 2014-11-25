@@ -1,0 +1,25 @@
+
+
+<html>
+<body>
+  <canvas id="the_canvas" width="400" height="400"></canvas>
+  <script>
+    var num = parseInt(window.prompt("How may squares do you want?"))
+    var square = Math.floor(Math.random()*100);
+    var canvas = document.getElementById('the_canvas');
+    var array = ["red","blue","green", "orange"];
+    var squares = canvas.getContext('2d');
+    for(i=0;
+        i<num;
+      )
+      {squares.fillStyle = array[i];
+      squares.fillRect (Math.floor(Math.random()*300),
+                    Math.floor(Math.random()*300),
+                    square,
+                    square
+                  );
+       i ++;
+      };
+  </script>
+</body>
+</html>
